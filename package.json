@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "tw:watch": "npx tailwindcss -i ./src/input.css -o ./src/dist/output.css --watch",
+    "start": "serve src"
+  },
+  "devDependencies": {
+    "tailwindcss": "3.0.24"
+  }
+}
