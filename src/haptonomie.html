@@ -7,6 +7,15 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <style>
+      .material-symbols-rounded {
+        font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
+      }
+    </style>
     <style>
       body {
         background-color: #fff2d7;
@@ -18,9 +27,9 @@
       }
 
       p,
-      span {
+      span,
+      li {
         color: #2b4743;
-        font-size: 20px;
       }
     </style>
     <meta charset="UTF-8" />
@@ -28,7 +37,7 @@
     <link href="/dist/output.css" rel="stylesheet" />
   </head>
   <body class="h-screen">
-    <div class="flex mb-10 basis-full justify-between">
+    <div class="flex mb-3 basis-full justify-between">
       <a class="hover:opacity-75" href="/">
         <div class="flex flex-col md:flex-row items-center">
           <img src="logo.png" class="h-24" />
@@ -48,7 +57,7 @@
           >Grossesse</a
         >
         <a class="font-mine hover:text-orange-400" href="/haptonomie"
-          >Haptonomie</a
+          >Préparation</a
         >
         <a class="font-mine hover:text-orange-400" href="/reeducation"
           >Rééducation</a
@@ -66,20 +75,131 @@
         Prendre rendez-vous
       </div>
     </div>
-    <div class="flex">
-      <div class="w-1/2 flex flex-col items-center justify-around p-4">
-        <img src="hapto1.png" />
+    <div class="relative">
+      <img src="haptonomie.png" class="w-full" />
+      <div class="absolute w-full h-full top-0 flex items-center md:pl-20 pl-8">
+        <div class="flex flex-1 max-w-[13rem] md:max-w-[30rem]">
+          <h2 class="page-title">Préparation à la naissance</h2>
+        </div>
       </div>
-      <div class="w-1/2 flex flex-col items-center p-4">
-        <h2 class="text-xl">Haptonomie</h2>
-        <text class="text-lg">Diplôme</text>
-        <text class="">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe
-          laborum magni fugit libero commodi quisquam quam, recusandae rerum
-          inventore quos eaque dignissimos praesentium quasi porro temporibus
-          tempora et sapiente beatae!
-        </text>
+    </div>
+    <div class="px-8 pt-5">
+      <div class="flex justify-center m-10">
+        <p class="text-xl text-gray-500 italic max-w-xl text-center">
+          <span class="material-symbols-rounded"> format_quote </span>Comme
+          devenir parents n'est pas toujours simple, je vous propose, à vous et
+          votre partenaire, des clefs pour accueillir votre bébé le plus
+          sereinement possible<span class="material-symbols-rounded">
+            format_quote
+          </span>
+        </p>
       </div>
+      <div class="flex gap-10 md:gap-0 my-3 flex-wrap">
+        <div class="flex flex-col items-center md:basis-1/3">
+          <div class="bg-red-900 w-5/6 rounded-full h-48 pt-2 pb-3">
+            <img src="prepa-1.png" class="h-full m-auto" />
+          </div>
+          <h3 class="text-xl mt-6 mb-3">Préparation Classique</h3>
+          <div class="flex flex-col gap-2 text-base px-4">
+            <p>
+              La préparation classique est la plus théorique. Essentielle lors
+              d'une 1ere grossesse, elle offre une vision plus globale de
+              l'aventure qui vous attend.
+            </p>
+            <p>
+              Réalisée entre le 6e et 9e mois, les cours se déroulent en petit
+              groupe ( max 3 mamans). Si les partenaires souhaitent venir, cela
+              est possible en fonction du nombre par séance.
+            </p>
+            <p>Les thématiques proposées sont :</p>
+
+            <ol class="list-decimal">
+              <li>Rappels anatomiques et motifs de consultations d'urgence.</li>
+              <li>Déroulement du travail et poussée.</li>
+              <li>
+                Respiration, Péridurale et relaxation avec visualisation sur le
+                jour de la naissance.
+              </li>
+              <li>
+                L'après naissance: le séjour en maternité, le retour à la
+                maison, le suivi pour vous et bébé.
+              </li>
+              <li>L'allaitement maternel.</li>
+              <li>Cours avec conjoint, gestion des contractions en couple.</li>
+              <li>
+                Relaxation avec visualisation guidée autour de votre bébé.
+              </li>
+            </ol>
+          </div>
+        </div>
+        <div class="flex flex-col items-center md:basis-1/3">
+          <div class="bg-red-900 w-5/6 rounded-full h-48 pt-5 pb-7">
+            <img src="haptonomie-1.png" class="h-full m-auto" />
+          </div>
+          <h3 class="text-xl mt-6 mb-3">Haptonomie prénatale</h3>
+          <div class="flex flex-col gap-2 text-base px-4">
+            <p>L'haptonomie prénatale se déroule exclusivement en couple.</p>
+            <p>
+              Plus qu'une préparation à la naissance, il s'agit d'un
+              accompagnement à la parentalité en intégrant, dès la grossesse,
+              votre bébé dans votre quotidien.
+            </p>
+            <p>
+              Ensemble, vous lui offrez, dès cette période, une sécurité
+              affective et une présence pleine, capitale à son bon
+              développement.
+            </p>
+            <p>
+              Le partenaire a également une place primordiale en vous aidant,
+              par son soutien et sa présence, à bien vivre votre grossesse.
+              Cette période n'est d'ailleurs plus la grossesse de la maman mais
+              un moment vécu en couple.
+            </p>
+            <p>
+              L'accompagnement que je vous propose est composé de 5 séances (45
+              minutes à 1heure) pendant la grossesse et 1 après la naissance.
+            </p>
+            <p>
+              La 1ere environ 15j-3s avant la 2e échographie. La 2e 15j plus
+              tard car le contact haptonomique est quelque chose qu'il faut
+              s'approprier. Les autres séances sont programmées fin du 6e, 7e et
+              8e mois. La séance post natale est organisée dans le 1e mois de
+              l'enfant.
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-col items-center md:basis-1/3">
+          <div class="bg-red-900 rounded-full w-5/6 h-48 py-2">
+            <img src="yoga.png" class="h-full m-auto" />
+          </div>
+          <h3 class="text-xl mt-6 mb-3">Yoga prénatal</h3>
+          <div class="flex flex-col gap-2 text-base px-4">
+            <p>
+              Le yoga prénatal est une préparation corporelle au cours de votre
+              grossesse. Elle permet d'améliorer votre bien être: Maux de dos,
+              troubles du sommeil, de la circulation…
+            </p>
+            <p>
+              La pratique d'une activité physique au cours de la grossesse est
+              conseillée. Elle permet de diminuer les complications et de mieux
+              vivre son accouchement.Cette pratique ne nécessite pas d'avoir
+              déjà pratiqué le yoga classique.
+            </p>
+            <p>
+              Les séances durent 45 min en petit groupe de 2 mamans. Afin d'être
+              le plus efficace, elles peuvent se dérouler dès le 4e-5e mois et
+              jusqu'à l'accouchement. Pensez à venir avec une tenue souple type
+              legging et une bouteille d'eau. Le reste du matériel vous est
+              fourni.
+            </p>
+            <p class="italic text-gray-500">
+              La pratique d'une activité physique adaptée au cours de la
+              grossesse n'augmente pas le risque d'accouchement prématurée.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="mt-40">&nbsp;</div>
     </div>
   </body>
 </html>
