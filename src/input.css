@@ -42,4 +42,16 @@
   .menu-mobile a + a {
     @apply border-l;
   }
+
+  .category {
+    @apply md:text-3xl lg:text-4xl text-2xl font-mine my-8 text-center;
+  }
+
+  .content p {
+    @apply my-3;
+  }
+
+  .tarif {
+    @apply flex justify-between border-b border-orange-200 p-3;
+  }
 }

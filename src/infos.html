@@ -7,6 +7,15 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <style>
+      .material-symbols-rounded {
+        font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
+      }
+    </style>
     <style>
       body {
         background-color: #fff2d7;
@@ -18,9 +27,9 @@
       }
 
       p,
-      span {
+      span,
+      li {
         color: #2b4743;
-        font-size: 20px;
       }
     </style>
     <meta charset="UTF-8" />
@@ -28,7 +37,7 @@
     <link href="/dist/output.css" rel="stylesheet" />
   </head>
   <body class="h-screen">
-    <div class="flex mb-10 basis-full justify-between">
+    <div class="flex mb-3 basis-full justify-between">
       <a class="hover:opacity-75" href="/">
         <div class="flex flex-col md:flex-row items-center">
           <img src="logo.png" class="h-24" />
@@ -38,9 +47,7 @@
           </div>
         </div>
       </a>
-      <div
-        class="hidden md:flex flex-1 gap-10 items-center justify-center pr-3 max-w-6xl flex-wrap"
-      >
+      <div class="menu-items-container">
         <a class="font-mine hover:text-orange-400" href="/gynecologie"
           >Gynécologie</a
         >
@@ -66,20 +73,250 @@
         Prendre rendez-vous
       </div>
     </div>
-    <div class="flex">
-      <div class="w-1/2 flex flex-col items-center justify-around p-4">
-        <img src="hapto1.png" />
+    <div class="relative">
+      <img src="infos.png" class="w-full" />
+      <div class="absolute w-full h-full top-0 flex items-center md:pl-20 pl-8">
+        <div class="flex w-2/3">
+          <h2 class="page-title">Infos pratiques - Tarifs</h2>
+        </div>
       </div>
-      <div class="w-1/2 flex flex-col items-center p-4">
-        <h2 class="text-xl">Haptonomie</h2>
-        <text class="text-lg">Diplôme</text>
-        <text class="">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe
-          laborum magni fugit libero commodi quisquam quam, recusandae rerum
-          inventore quos eaque dignissimos praesentium quasi porro temporibus
-          tempora et sapiente beatae!
-        </text>
+    </div>
+    <div class="px-8 pt-5">
+      <div class="flex justify-center m-10">
+        <p class="text-xl text-gray-500 italic max-w-xl text-center">
+          <span class="material-symbols-rounded"> format_quote </span>Je serai
+          heureuse de vous accueillir au sein de mon cabinet à partir du 1er
+          août 2022, le lundi et jeudi toute la journée ainsi que le mardi
+          matin<span class="material-symbols-rounded"> format_quote </span>
+        </p>
       </div>
+      <div>
+        <h3 class="category">Accessibilité</h3>
+        <div class="flex gap-8 flex-wrap md:flex-nowrap basis-1/2">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2707.189700485733!2d-1.5234692846985602!3d47.27154611905677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4805efcd4a49d9f3%3A0x90a1508667310eed!2s19%20Rue%20de%20la%20Planche%20au%20Gu%C3%A9%2C%2044300%20Nantes!5e0!3m2!1sfr!2sfr!4v1653332703692!5m2!1sfr!2sfr"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <div class="max-w-2xl">
+            <p>
+              Au coeur du quartier Nantes Erdre, proche de la zone d'activité de
+              la Chantrerie ainsi que de plusieurs pôles universitaires: Ecole
+              vétérinaire, ICAM, Polytechnique, vous pouvez accéder facilement
+              au cabinet en voiture ou en transport en commun.
+            </p>
+            <p>Pour vous y rendre :</p>
+            <ul class="list-disc">
+              <li>
+                En voiture : sortie 24 "Nantes-Est". Stationnement gratuit dans
+                la rue devant le cabinet ou pendant 1h30 sur le parking de
+                l'Intermarché à 100m du cabinet.
+              </li>
+              <li>
+                En transport : 75 arrêt "Potiron" à 200m, C6 arrêt "St Joseph de
+                Porterie" à 650m.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex flex-wrap md:flex-nowrap justify-between gap-6">
+          <div class="md:basis-1/2">
+            <h3 class="category">Déroulement de la séance</h3>
+            <div class="content">
+              <p>
+                Soucieuse de respecter votre intimité, je vous propose d'être
+                couverte par un drap lors des consultations de gynécologie ou de
+                rééducation.
+              </p>
+              <p>
+                Cependant, si vous préférez, vous pouvez également amener une
+                serviette pour mettre sur la table d'examen et un paréo pour
+                vous couvrir.
+              </p>
+              <p>
+                Pour les consultations de grossesse, sauf pathologie, l'examen
+                mensuel ne nécessite pas de vous déshabiller.
+              </p>
+            </div>
+          </div>
+          <div class="md:basis-1/2">
+            <h3 class="category">Prise de rendez-vous</h3>
+            <div class="content">
+              <p>
+                La prise de rendez vous est possible directement sur le site
+                Doctolib.
+              </p>
+              <p>
+                Pour une pose ou un retrait d'implant ou de stérilet, merci de
+                prendre un 1er rendez vous pour avoir les ordonnances
+                nécessaires.
+              </p>
+              <p>
+                Le 1er rendez vous d'haptonomie prénatale se déroule 3semaines
+                avant votre 2e échographie.
+              </p>
+              <p>
+                Pour la rééducation périnéale, merci de fixer 6 rendez vous
+                espacés au minimum de 48h. Les séances sont possibles pendant
+                les règles.
+              </p>
+              <p>
+                Pour une surveillance par monitoring au cours de la grossesse ou
+                un retour à domicile après accouchement, merci de me contacter
+                par sms.
+              </p>
+              <p>
+                Pour tout renouvellement d'ordonnance (pilule, tire lait ...),
+                merci de prendre rendez vous en téléconsultation.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h3 class="category">Tarifs</h3>
+          <div class="content md:max-w-4xl mx-auto">
+            <p>
+              Le cabinet étant conventionné, je ne pratique pas de dépassement
+              d'honoraire pour les consultations. Le tiers-payant vous sera
+              proposé. Le règlement peut s'effectuer par chèque/carte
+              bleu/espèce.
+            </p>
+            <div class="tarif">
+              <span>Consultations</span>
+              <span>25€</span>
+            </div>
+            <div class="tarif">
+              <span>Rééducation</span>
+              <span>21€</span>
+            </div>
+            <div class="tarif">
+              <span
+                >Haptonomie (compter 6 séances pour un parcours complet)</span
+              >
+              <span>60€&nbsp;/&nbsp;séance</span>
+            </div>
+            <div class="tarif">
+              <span>Autres tarifs</span>
+              <span
+                ><a
+                  class="underline cursor-pointer"
+                  href="https://www.ameli.fr/loire-atlantique/sage-femme/exercice-liberal/facturation-remuneration/tarifs/tarifs"
+                  >A retrouver sur le site de la CPAM</a
+                ></span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mt-40">&nbsp;</div>
+    <div class="menu-mobile">
+      <a href="/gynecologie"
+        ><span class="material-symbols-rounded"> female </span>
+        <div>Gynécologie</div></a
+      >
+      <a href="/grossesse"
+        ><span class="material-symbols-rounded"> pregnant_woman </span>
+        <div>Grossesse</div></a
+      >
+      <a href="/haptonomie"
+        ><span class="material-symbols-rounded"> self_improvement </span>
+        <div>Prépa</div></a
+      >
+      <a href="/reeducation"
+        ><span
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="40px"
+            viewBox="0 0 101 282"
+          >
+            <path
+              id="woman"
+              fill="#2b4743"
+              stroke="black"
+              stroke-width="1"
+              d="M 45.00,2.31
+              C 47.22,2.17 48.71,1.94 51.00,2.31
+                75.12,3.77 76.97,38.90 53.00,44.32
+                39.92,47.28 28.23,34.68 29.10,22.00
+                29.76,12.23 35.82,5.39 45.00,2.31 Z
+              M 28.00,87.00
+              C 28.00,87.00 40.86,111.00 40.86,111.00
+                43.68,116.09 46.49,119.83 45.89,126.00
+                45.54,129.53 42.58,135.56 38.10,133.83
+                35.87,132.97 34.31,129.94 33.14,128.00
+                33.14,128.00 25.24,114.00 25.24,114.00
+                18.00,99.76 8.45,86.70 7.18,70.00
+                6.74,64.20 8.75,56.24 13.11,52.22
+                19.05,46.75 28.49,48.08 36.00,47.84
+                36.00,47.84 46.00,47.84 46.00,47.84
+                46.00,47.84 57.00,47.84 57.00,47.84
+                57.00,47.84 71.00,49.00 71.00,49.00
+                71.00,49.00 77.00,49.00 77.00,49.00
+                80.40,49.02 83.84,49.00 86.96,50.57
+                94.51,54.36 95.77,64.63 94.11,72.00
+                90.43,88.31 83.92,96.84 76.31,111.00
+                76.31,111.00 68.22,127.00 68.22,127.00
+                68.22,127.00 57.22,145.87 57.22,145.87
+                55.14,148.36 52.40,150.09 49.05,149.02
+                41.18,146.50 45.83,136.75 48.26,132.00
+                48.26,132.00 72.00,86.00 72.00,86.00
+                64.51,89.72 61.46,100.01 57.42,107.00
+                55.88,109.66 53.62,114.37 50.03,114.37
+                46.60,114.37 44.48,109.53 42.99,107.00
+                39.12,100.45 34.71,90.56 29.00,86.00
+                29.00,86.00 28.00,87.00 28.00,87.00 Z
+              M 51.00,173.00
+              C 47.80,182.88 49.00,193.72 49.00,204.00
+                49.00,204.00 49.00,234.00 49.00,234.00
+                49.00,234.00 50.00,249.00 50.00,249.00
+                50.00,249.00 50.00,266.00 50.00,266.00
+                49.97,272.29 47.33,281.29 39.00,279.53
+                34.92,278.66 31.99,274.79 30.80,271.00
+                29.56,267.03 30.05,257.61 30.00,253.00
+                30.00,253.00 29.00,238.00 29.00,238.00
+                29.00,238.00 29.00,205.00 29.00,205.00
+                29.00,205.00 28.00,188.00 28.00,188.00
+                27.98,178.26 30.24,171.17 18.00,171.00
+                15.11,170.96 9.56,171.29 7.05,170.26
+                2.70,168.47 1.84,164.20 2.69,160.00
+                3.52,155.94 9.29,143.47 11.30,139.00
+                12.86,135.56 17.56,123.59 20.38,122.08
+                24.79,119.71 28.17,127.09 29.77,130.00
+                33.98,137.68 41.54,155.34 52.00,153.76
+                60.50,152.48 66.51,136.85 70.60,130.00
+                72.26,127.23 75.71,120.48 79.79,122.17
+                82.50,123.29 84.86,129.37 86.00,132.00
+                86.00,132.00 96.72,156.00 96.72,156.00
+                98.13,159.38 99.93,163.43 97.40,166.77
+                92.18,173.66 77.00,167.52 73.74,175.11
+                73.01,176.80 73.03,179.18 73.05,181.00
+                73.05,181.00 73.05,196.00 73.05,196.00
+                73.05,196.00 74.00,208.00 74.00,208.00
+                74.00,208.00 74.00,265.00 74.00,265.00
+                73.99,268.59 74.23,272.78 72.15,275.89
+                67.92,282.20 59.65,279.98 56.45,273.96
+                54.94,271.11 55.10,268.10 54.72,265.00
+                54.72,265.00 53.34,249.00 53.34,249.00
+                53.34,249.00 54.00,238.00 54.00,238.00
+                54.00,238.00 54.00,195.00 54.00,195.00
+                54.00,187.04 55.26,180.01 51.00,173.00 Z"
+            /></svg
+        ></span>
+        <div>Rééduc</div></a
+      >
+      <a href="/infos"
+        ><span class="material-symbols-rounded"> contact_support </span>
+        <div>Infos</div></a
+      >
+      <a href="/qui-suis-je"
+        ><span class="material-symbols-rounded"> face </span>
+        <div>Qui suis-je?</div></a
+      >
     </div>
   </body>
 </html>
