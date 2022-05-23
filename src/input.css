@@ -17,4 +17,29 @@
   .menu {
     @apply flex mb-3 basis-full justify-between;
   }
+
+  .menu-items-container {
+    @apply hidden md:hidden xl:flex flex-1 gap-10 items-center justify-center pr-3 max-w-6xl flex-wrap;
+  }
+
+  .menu-mobile {
+    @apply lg:hidden flex fixed bottom-0 w-full;
+  }
+
+  .menu-mobile a {
+    @apply flex-1 flex flex-col justify-between items-center bg-white p-2;
+    min-width: 1/6;
+  }
+  .menu-mobile a span {
+    @apply text-5xl;
+  }
+  .menu-mobile a div {
+    @apply text-[0.5rem];
+  }
+  .menu-mobile a svg ::after {
+    content: "";
+  }
+  .menu-mobile a + a {
+    @apply border-l;
+  }
 }
