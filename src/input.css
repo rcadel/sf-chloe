@@ -19,11 +19,11 @@
   }
 
   .menu-items-container {
-    @apply hidden md:hidden xl:flex flex-1 gap-10 items-center justify-center pr-3 max-w-6xl flex-wrap;
+    @apply hidden xl:flex flex-1 gap-10 items-center justify-center pr-3 max-w-6xl flex-wrap;
   }
 
   .menu-mobile {
-    @apply lg:hidden flex fixed bottom-0 w-full;
+    @apply xl:hidden flex fixed bottom-0 w-full;
   }
 
   .menu-mobile a {
