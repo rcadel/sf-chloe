@@ -7,6 +7,7 @@ module.exports = {
       fontFamily: {
         sans: [defaultTheme.fontFamily.sans],
         mine: "Playfair Display",
+        forum: "Forum",
       },
     },
   },
