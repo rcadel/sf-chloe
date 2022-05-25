@@ -54,4 +54,9 @@
   .tarif {
     @apply flex justify-between border-b border-orange-200 p-3;
   }
+
+  .banner-container {
+    @apply w-full relative;
+    aspect-ratio: 761/197;
+  }
 }
