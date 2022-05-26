@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer components {
+  .material-symbols-rounded {
+    font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
+  }
   .btn-primary {
     @apply bg-orange-200 rounded p-2 hover:bg-orange-300;
   }
@@ -78,5 +81,13 @@
 
   .rendez-vous {
     @apply mx-4 self-center font-mine bg-orange-300 hover:bg-orange-400 hover:text-white cursor-pointer p-3 rounded-md;
+  }
+
+  path.active-menu {
+    @apply fill-orange-400;
+  }
+
+  .active-menu {
+    @apply text-orange-400 xl:text-orange-500;
   }
 }
